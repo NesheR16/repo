@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>testApp</title>
+	<style type="text/css">
+		h3 {
+			  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+		}
+		.movex {
+			margin-left:40px;
+		}
+	</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+	<div>
+		<h3>Documentations</h3>
+
+	</div>
+	<script>
+	setInterval(function() {
+		$('h3').toggleClass('movex');
+	},1200);
+	</script>
+</body>
+</html>	
