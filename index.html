@@ -8,9 +8,11 @@
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  		float:none;
+		margin: 85px auto;
+		text-align: center;
 		}
 		.movex {
-			margin-left:40px;
 			color:#0C3;
 		}
 	</style>
@@ -24,9 +26,12 @@
 
 	</div>
 	<script>
+	$('h3').click(function() {
 	setInterval(function() {
 		$('h3').toggleClass('movex');
 	},1200);
+	});
+
 	</script>
 </body>
 </html>	
