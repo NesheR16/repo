@@ -2,4 +2,6 @@ repo
 ====
 
 xrepo
-dddddddddddddddd
+
+firstApp made for testing and examples ;]
+//
