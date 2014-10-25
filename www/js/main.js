@@ -1,10 +1,10 @@
-var app = angular.module('app', []);
+var app = angular.module('app', ['ngSanitize']);
 app.controller('ctrler', function ($scope) {
-var zib = $scope;
-	$scope.rvars = { username: "", password: "" };
-	$scope.login = function () {
-		if ($scope.rvars.username !== 'zub') {
-			alert('mismatch');
-		}
-	}
+	$scope.customers = [
+	{ name: 'bar', last: 'molaga' },
+	{ name: 'baruh', last: 'asulin' },
+	{ name: 'shasdc', last: 'wefw' },
+	{ name: 'qwef', last: 'qwf' }
+	];
+	$scope.myHtml = '<h1 style="color:#0C3;">aaaaaaa</h1>';
 });
