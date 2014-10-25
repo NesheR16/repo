@@ -1,8 +1,8 @@
 var app = angular.module('app', ['ngSanitize']);
 app.controller('ctrler', function ($scope) {
 	$scope.customers = [
-	{ name: 'bar', last: 'molaga' },
-	{ name: 'baruh', last: 'asulin' },
+	{ name: 'aaaaaa', last: 'ddddd' },
+	{ name: 'ccscs', last: 'scsveer' },
 	{ name: 'shasdc', last: 'wefw' },
 	{ name: 'qwef', last: 'qwf' }
 	];
