@@ -12,8 +12,8 @@
 <body ng-controller="ctrler">
 some thing
 <input type="text" ng-model="cast" />
-<div ng-repeat="cust in customers | filter:cast">
-{{ cust.name + ' @@ ' + cust.last }}
+<div ng-repeat="cust in customers | filter:cast" ng-bind-html="cust.last">
+ 	<li ng-class-odd="'nicy'">{{ cust.name + ' @@ ' + cust.last }}</li>
 </div>
 <input type="text" ng-model="myHtml" />
 <p data-ng-bind-html="myHtml"></p>
