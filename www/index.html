@@ -9,13 +9,21 @@
 <script src="js/main.js"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-<body ng-controller="ctrler">
-some thing
+<body>
+<!-- <body ng-controller="ctrler"> -->
+<!-- some thing
 <input type="text" ng-model="cast" />
 <div ng-repeat="cust in customers | filter:cast" ng-bind-html="cust.last">
  	<li ng-class-odd="'nicy'">{{ cust.name + ' @@ ' + cust.last }}</li>
 </div>
+<h1>
+{{ komo }}
+</h1>
 <input type="text" ng-model="myHtml" />
-<p data-ng-bind-html="myHtml"></p>
+<p dynamic="myHtml"></p> -->
+    <h1>Compile dynamic HTML</h1>
+    <div ng-controller="MyController">
+      <textarea ng-model="html"></textarea>
+      <div dynamic="html"></div>
 </body>
 </html>
